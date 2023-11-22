@@ -12,9 +12,9 @@ contract DegenToken is ERC20, Ownable {
         ERC20("Degen", "DGN") 
         Ownable(initialOwner)
     {
-        itemPrices[1] = 100; // Price of item 1 (DGN NFT)
-        itemPrices[2] = 200; // Price of item 2 (DGN Merch)
-        itemPrices[3] = 50; // Price of item 3 (DGN Mystery Box)
+        itemPrices[1] = 100; 
+        itemPrices[2] = 200; 
+        itemPrices[3] = 50; 
     }
 
     function mintDGNToken(address to, uint256 amount) public onlyOwner {
